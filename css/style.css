@@ -1,0 +1,438 @@
+﻿@import "fonts/anime_ace_2/stylesheet.css";
+@import "fonts/avengeance_mightiest_avengeRg/stylesheet.css";
+@import "fonts/TT Firs Medium/TTFirs-ExtraBoldItalic.css";
+@import 'animate.css';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+ol,
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  text-decoration: none;
+  font-family: "TTFirs";
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+  background: #353a33;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+
+#navbar {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a:hover {
+  color: #fff;
+}
+
+#navbar li a .logo {
+  margin: 0 30px
+}
+
+.logo img {
+  width: 100px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ba9241;
+  transition: 0.3s ease;
+}
+
+#saas_two_banner {
+  display: flex;
+  height: calc(100% - 50px);
+  position: relative;
+}
+
+.left-banner {
+  width: 130px;
+  height: auto;
+  background: url("../img/bg-left-banner.png");
+  background-color: #ba9241;
+  background-size: auto;
+}
+
+#saas_two_banner .banner-desc {
+  width: 40%;
+  height: 18%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#saas_two_banner .banner-desc .count-slide {
+  width: 122px;
+  background-color: #30352d;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  color: #353a33;
+}
+
+#saas_two_banner .banner-desc .banner-slide-desc {
+  background-color: #353a33;
+  color: #fff;
+  width: 341px;
+  padding: 18px 20px 15px 34px;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+#saas_two_banner .banner-desc .banner-slide-desc p {
+  margin-bottom: 0;
+}
+
+#saas_two_banner .bird {
+  position: absolute;
+  bottom: -39px;
+  left: 65px;
+}
+
+#saas_two_banner .bird img {
+  width: 101px;
+  height: auto;
+  object-fit: cover;
+}
+
+#about {
+  background: url(../img/giris.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: #e7e8ed;
+
+}
+
+#about .d-flex .justify-content-center {
+  height: 100px;
+}
+
+.shape {
+  background-color: #e7e8ed;
+  height: 200px;
+}
+
+.shape img {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  object-fit: contain;
+}
+
+.about-text {
+  animation: fadeInLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.about-text p {
+  font-size: 14px;
+  margin-bottom: 0;
+  letter-spacing: 0.4px;
+}
+
+.about-text .about-text-2 {
+  font-size: 52px;
+  color: #ba9241;
+  letter-spacing: 2.2px;
+}
+
+.about-text .about-text-2 h1 {
+  font-size: 3.5rem;
+}
+
+.about-text .about-text-3 h4 {
+  letter-spacing: 2.5px;
+  margin-bottom: 1.8rem;
+}
+
+.about-text .about-text-6 {
+  margin-bottom: 1.5rem;
+}
+
+.about-text .button {
+  display: flex;
+  position: relative;
+}
+
+button {
+  border: 1px solid;
+  width: 250px;
+  height: 37px;
+  text-align: -webkit-left;
+  padding-left: 18px;
+}
+
+.btn-arrow {
+  position: absolute;
+  right: 14px;
+  top: 7px;
+}
+
+.btn-arrow i {
+  color: #353a33;
+}
+
+#section-3 {
+  background: url("../img/counter-bg.jpg");
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.counter {
+  width: 39%;
+  margin: auto;
+  animation: fadeInLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.counter .box-counter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.counter .box-counter .box {
+  width: 191px;
+  height: 190px;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 32px;
+  background-color: #f8f8f8;
+}
+
+.counter .box-counter .box img {
+  width: 65px;
+  height: 65px;
+}
+
+.counter .box-counter .box:hover {
+  background-color: #ba9241;
+}
+
+.counter .box-counter .box:hover image img {
+  color: #30352d;
+}
+
+.counter .box-counter .box .image {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.flex {
+  justify-content: center;
+  margin: 100px;
+  flex-wrap: wrap;
+}
+
+.body {
+  position: absolute;
+  bottom: 74px;
+  background-color: #ba9241;
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  margin-left: 18%;
+}
+
+.card-btn {
+  font-size: 13px;
+}
+
+.card-btn a {
+  position: absolute;
+  top: 81px;
+  right: 41px;
+}
+
+.button button {
+  width: 180px;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.contact-form {
+  background-size: cover;
+}
+
+.contact-form input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid #e1b98f;
+  border-radius: 0;
+}
+
+.contact-form textarea {
+  height: 250px;
+  border: none;
+  border-bottom: 1px solid #e1b98f;
+  border-radius: 0;
+  opacity: .6;
+}
+
+.contact-form .col-lg-6 .form-group.my-2 {
+  display: flex;
+  justify-content: right;
+}
+
+.contact-form .col-lg-6 button {
+  letter-spacing: 2.5px;
+  background: #353a33;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 100px;
+  width: 150px;
+  text-align-last: center;
+}
+
+.contact-form input::placeholder,
+textarea::placeholder {
+  opacity: .6;
+}
+
+.contact-form .form-group a {
+  color: #353a33;
+  text-decoration: none;
+  background-color: transparent;
+  opacity: .6;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(53, 58, 51, 0.8), rgba(53, 58, 51, 0.8), rgba(53, 58, 51, 0.8)), url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: calc(60vh -50px);
+  padding: 20px 0;
+}
+
+
+
+
+.footer .catalog {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.footer .catalog .catalog-img img {
+  width: 200px;
+}
+
+.footer .catalog .news {
+  width: 500px;
+  height: 61px;
+  background-color: #ba9241;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  /* text-decoration: none; */
+  list-style: none;
+}
+
+.footer .catalog .news a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.footer .yenilik {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ba9742;
+  width: 47%;
+  margin: auto;
+  height: 70px;
+  color: #fff;
+  letter-spacing: 0.4px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.footer .yenilik ul {
+  display: flex;
+  margin: auto 0;
+}
+
+.footer .yenilik ul li a {
+  color: #fff;
+  margin: 10px;
+}
+
+.footer .address {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.copyright {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+}
